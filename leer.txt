@@ -1,0 +1,4 @@
+ crear la base de datos  tiene  como nombre usuarioslaravel
+ crearla tabla con los datos de prueba  atraves de laravel  
+
+ php artisan migrate:refresh --seed
