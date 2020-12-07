@@ -20,6 +20,7 @@ class UsuariosController extends Controller {
         $cedula = $request->input('cedula');
         $correo = $request->input('correo');
         $telefono = $request->input('telefono');
+        $direccion = $request->input('direccion');
 
          /*validando  que  no hayan datos  duplicados*/
         $data = Usuarios::where('cedula', '=', $cedula)->orWhere('correo', '=', $correo)->get();
@@ -36,6 +37,7 @@ class UsuariosController extends Controller {
             $usuarios->cedula = $cedula;
             $usuarios->correo = $correo;
             $usuarios->telefono = $telefono;
+            $usuarios->direccion = $direccion;
             if ($usuarios->save()) {
 
                 $respuesta = "operacion  exitosa";
@@ -51,13 +53,14 @@ class UsuariosController extends Controller {
         $cedula = $request->input('cedula');
         $correo = $request->input('correo');
         $telefono = $request->input('telefono');
-
+        $direccion= $request->input('direccion');
         $Usuarios = Usuarios::find($id);
         $Usuarios->nombres = $nombres;
         $Usuarios->apellidos = $apellidos;
         $Usuarios->cedula = $cedula;
         $Usuarios->correo = $correo;
         $Usuarios->telefono = $telefono;
+        $Usuarios->direccion = $direccion;
         if ($Usuarios->save()) {
 
             $respuesta = "operacion  exitosa";

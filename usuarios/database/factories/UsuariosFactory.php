@@ -21,6 +21,6 @@ $factory->define(App\Usuarios::class, function (Faker $faker) {
         'cedula' => $faker->unique()->numberBetween(1012066211,512066211589),
         'correo' => $faker->unique()->safeEmail,
         'telefono' =>$faker->numberBetween(3223585041,4005565041),
-       
+        
     ];
 });

@@ -43,6 +43,7 @@
    <th>Cedula</th>
    <th>Correo</th>
    <th>Telefono</th>
+   <th>Direccion</th>
    <th>Editar</th>
    <th>Eliminar</th>
    </tr>   
@@ -54,6 +55,7 @@
     <td><%users.cedula%></td>
     <td><%users.correo%></td>
     <td><%users.telefono%></td>
+    <td><%users.direccion%></td>
     <td><button class="btn btn-warning" ng-click="editlist(users.id)" >Editar</button></td>
     <td><button class="btn btn-danger" ng-click="delete(users.id)">Eliminar</button></td>     
      </tr> 
@@ -101,7 +103,10 @@
     <label for="">Telefono</label>
     <input type="text" class="form-control" id="telefono" name='telefono' placeholder="Enter Telefono">
   </div>
-
+  <div class="form-group">
+    <label for="">Telefono</label>
+    <input type="text" class="form-control" id="Direccion" name='direccion' placeholder="Enter direccion">
+  </div>
 </form>
 
     </div>

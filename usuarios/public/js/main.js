@@ -74,6 +74,10 @@ app.controller("myCtrl", function ($scope, $http) {
         if ($("#telefono").val() == "") {
             alert('el campo telefono  es requerido')
             return false;
+        }  
+        if ($("#Direccion").val() == "") {
+            alert('el campo telefono  es requerido')
+            return false;
         }
   
           /* defino   dos variables  la url  y los parametros   para  enviar al ajax o http de  angular*/
@@ -161,6 +165,11 @@ app.controller("myCtrl", function ($scope, $http) {
             return  false;
         }
         if ($("#telefono2").val() == "") {
+            alert('el campo telefono  es requerido')
+            return false;
+        }
+
+          if ($("#direccion2").val() == "") {
             alert('el campo telefono  es requerido')
             return false;
         }

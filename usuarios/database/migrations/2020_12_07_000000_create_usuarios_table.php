@@ -21,7 +21,7 @@ class CreateUsuariosTable extends Migration
             $table->string('cedula',45)->unique();
             $table->string('correo',45)->unique();
             $table->string('telefono',45);
-            
+            $table->string('direccion',45);
         });
     }
 

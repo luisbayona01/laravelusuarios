@@ -10,7 +10,7 @@ class Usuarios extends Model {
     protected $table = 'usuarios';  // tabla usuarios
     protected $primaryKey = 'id';
     protected $fillable = [
-        'nombres', 'apellidos', 'cedula', 'correo', 'telefono'
+        'nombres', 'apellidos', 'cedula', 'correo', 'telefono','direccion'
     ];
 
 }
