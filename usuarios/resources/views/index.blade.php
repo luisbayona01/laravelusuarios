@@ -104,7 +104,7 @@
     <input type="text" class="form-control" id="telefono" name='telefono' placeholder="Enter Telefono">
   </div>
   <div class="form-group">
-    <label for="">Telefono</label>
+    <label for="">Direccion</label>
     <input type="text" class="form-control" id="Direccion" name='direccion' placeholder="Enter direccion">
   </div>
 </form>
