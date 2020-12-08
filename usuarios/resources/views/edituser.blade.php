@@ -26,7 +26,7 @@
     <input type="text" class="form-control" id="telefono2" name='telefono' placeholder="Enter Telefono" value="{{$Usuarios->telefono}}">
   </div>
 <div class="form-group">
-    <label for="">Telefono</label>
+    <label for="">Direccion</label>
     <input type="text" class="form-control" id="direccion2" name='direccion' placeholder="Enter Telefono" value="{{$Usuarios->direccion}}">
   </div>
 </form>
